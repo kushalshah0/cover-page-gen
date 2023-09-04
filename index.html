@@ -2,154 +2,106 @@
 <html lang="en">
 
 <head>
-  <title>Cover Letter</title>
-    <!-- Add your meta tags, CSS links, and other head content here -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="image/logo.png" />
+    <title>Np Domain Registration Cover Letter Generator - Time and Update</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        footer {
+            /* position: absolute; */
+            left: 0;
+            bottom: 0;
+            height: 30px;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+    <script src="html2image/js.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(36753655, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-79228823-1'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-79228823-1');
+    </script>
 </head>
 
 <body>
     <div id="root">
-        <!-- Content for the root div goes here -->
+        <!-- <div style="float:right;">
+            <a href="help"><img src="image/help.png" /></a></div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2>Np Domain Registration Cover Letter Generator</h2>
+                    <p>Vist <a href="help">Help Section</a> for How to fill the form and How to save the Generated CoverLette</p>
+                    <form role="form" method="get" id="reused_form">
+                        <div class="form-group">
+                            <label for="name"> Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"> Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"> Phone:</label>
+                            <input type="text" class="form-control" id="phone" name="phone" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="dname"> Domain Name:</label>
+                            <input type="text" class="form-control" id="dname" name="dname" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="dnamee"> Domain Name Extension:</label>
+
+                            <select class="form-control" id="dnamee" name="dnamee" required>
+                                <option value="com">com.np</option>
+                                <option value="info">info.np</option>
+                                <option value="name">name.np</option>
+                                <option value="pro">pro.np</option>
+                                <option value="biz">biz.np</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-lg btn-success pull-right" id="btnContactUs">Generate &rarr;</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="/2018/05/np-domain-registration-in-nepal/">Register your .np Domain</a>
+        </footer>
     </div>
     <div id="dlbtn"></div>
     <div id="root2" style="
         width: 800px;
         margin: 0px auto;
         line-height: 1.5em;
-        font-size: 20px;
-        padding: 20px;">
-        <!-- Content for the root2 div goes here -->
+        font-size:20px;
+        padding:20px;">
     </div>
-
-    <!-- JavaScript Code -->
-    <script>
-        let coverCanvas;
-
-        function makeScreenshot() {
-            html2canvas(document.getElementById("coverLetter"), { scale: 2 }).then(canvas => {
-                coverCanvas = canvas;
-
-                var link = document.getElementById('link');
-                link.setAttribute('download', 'coverLetter.png');
-                link.setAttribute('href', coverCanvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
-            });
-        }
-
-        let isGetReq = isGetRequest();
-        if (isGetReq) {
-            document.getElementById('root').innerHTML = "";
-            let name = getQueryVariable("name");
-            let email = getQueryVariable("email");
-            let phone = getQueryVariable("phone");
-            let dname = getQueryVariable("dname");
-            let dnamee = getQueryVariable("dnamee");
-            let entryArea = ""
-            let notes = ""
-            name = name.replace("+", " ");
-            email = email.replace("%40", "@");
-            let date = new Date();
-            date = date.toDateString();
-
-            switch (dnamee) {
-                case "name":
-                    entryArea = "individuals, by name";
-                    notes = "open ccTLD, any person or entity is permitted to register";
-                    break;
-                case "com":
-                    entryArea = "commercial";
-                    notes = "open ccTLD, any person or entity is permitted to register";
-                    break;
-                case "pro":
-                    entryArea = "professions";
-                    notes = "reserved for licensed or certified lawyers, accountants, physicians and engineers in Nepal.";
-                    break;
-                case "info":
-                    entryArea = "information";
-                    notes = "This is an open ccTLD; any person or entity is permitted to register.";
-                    break;
-                case "biz":
-                    entryArea = "business";
-                    notes = "open ccTLD; any person or entity is permitted to register;";
-                    break;
-            }
-
-            document.getElementById('dlbtn').innerHTML =
-                `
-            <div id ="download">
-                <a id="link">
-                    <button class="btn btn-lg btn-success" id="download">
-                        Download
-                    </button>
-                </a>
-            </div>
-            `;
-
-            document.getElementById('root2').innerHTML =
-                `
-            <div id="coverLetter">
-                <!-- Content for the cover letter goes here -->
-                <div id="myInfo">
-                    <b class="name">`+ name + `</b><br/>
-                    <b>Email:</b> `+ email + `<br/>
-                    <b>Mobile:</b> `+ phone + `<br/>
-                </div><br/>
-                <div id="clear"></div>
-                <div id="hostMaster">
-                    The HostMaster<br/>
-                    NP ccTLD Registration Services<br/>
-                    Mercantile Communications Pvt. Ltd.<br/>
-                    Email: hostmaster@mercantile.com.np<br/>
-                </div><br/>
-                <div id="clear"></div>
-                <div id="date">`+ date +`</div><br/><br/>
-                <div id="clear"></div>
-                <div id="subject">
-                    <b>Subject: Application for `+ dname + `.` + dnamee + `.np domain registration</b>
-                </div><br/>
-                <div id="clear"></div>
-                <div id ="message">Dear Sir/Madam,<br/>
-                    I am writing to request the registration of domain under my name `+ name + ` with domain ` + dname + `.` + dnamee + `.np. <br/><br/>
-                    Applying for registration of the domain `+ dname + `.` + dnamee + `.np follows all the term and conditions of Domain registration residing at “https://register.com.np/terms-and-conditions”. I submit the required for the domain registrations as per the rule.<br/><br/>
-                    Thank you for “helping the industry and civil society to make them online”. Entry area for .`+ dnamee + `.np is "` + entryArea + `" and Notes is "` + notes + `" as mentioned on “https://register.com.np/np-ccTLDs”.<br/><br/>
-                    I would be very grateful indeed for your help. Needless to say, I will be glad to supply you with any further information you may need.
-                    I look forward to hearing from you soon.</div><br/>
-                <div id="clear"></div>
-                <div id="name">
-                Your Sincerely,<br/>
-                `+ name + `</div>
-            </div>
-            `;
-
-            makeScreenshot();
-        } else {
-            document.getElementById('root').innerHTML =
-                `
-            <!-- Content for the form goes here -->
-            `;
-
-            // Rest of your form code goes here...
-        }
-
-        // Function to extract query parameters from the URL
-        function getQueryVariable(variable) {
-            var query = window.location.search.substring(1);
-            var vars = query.split("&");
-            for (var i = 0; i < vars.length; i++) {
-                var pair = vars[i].split("=");
-                if (pair[0] == variable) { return pair[1]; }
-            }
-            return (false);
-        }
-
-        // Function to check if it's a GET request with specific parameters
-        function isGetRequest() {
-            var query = window.location.search.substring(1);
-            if (getQueryVariable("name") && getQueryVariable("email") && getQueryVariable("phone") && getQueryVariable("dname") && getQueryVariable("dnamee")) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-    </script>
+    <script src="js.js"></script>
 </body>
-
 </html>
