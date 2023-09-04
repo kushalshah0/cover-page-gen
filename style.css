@@ -1,0 +1,35 @@
+#coverLetter{
+	width: 800px;
+	margin: 50px auto;
+	line-height: 1.5em;
+	font-size:20px;
+	padding:20px;
+}
+#download{
+	margin:10px auto;
+	width: 100%;
+}
+.name{
+	font-size:22px
+}
+#myInfo{
+	float:right;
+}
+#clear{
+	clear:both;
+}
+#hostMaster{
+	float:left
+}
+#date{
+	float:right;
+}
+#subject{
+	text-align:center;
+}
+#message{
+	
+}
+#name{
+	
+}
