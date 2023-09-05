@@ -106,8 +106,6 @@ let coverCanvas;
     } else {
         document.getElementById('root').innerHTML =
             `
-    <div style="float:right;">
-    <a href="help"><img src="image/help.png"/></a></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
@@ -148,7 +146,6 @@ let coverCanvas;
             </div>
         </div>
         <footer>
-		<a href="/2018/05/np-domain-registration-in-nepal/">Register your .np Domain</a>
 		</footer>
 
         `
