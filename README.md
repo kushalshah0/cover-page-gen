@@ -74,27 +74,3 @@ Click **📄 Download Cover Letter**:
 * **[html2canvas](https://html2canvas.hertzen.com/)** – Convert DOM preview into downloadable images
 
 ---
-
-## 📜 Example Cover Letter Output
-
-### **Personal Request Example:**
-
-```
-Subject: Request for Personal Domain Registration - example.com.np
-
-Dear Sir/Madam,
-
-I am writing to formally request the registration of the domain name example.com.np for personal use. 
-This domain is intended to represent my personal online presence and digital identity.
-
-Technical Details:
-Domain Name: example.com.np
-Primary Name Server: ns1.babal.host
-Secondary Name Server: ns2.babal.host
-
-Thank you for considering my application.
-Sincerely,
-Kushal Shah
-```
-
----
