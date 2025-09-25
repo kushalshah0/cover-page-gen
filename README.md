@@ -24,7 +24,7 @@ This tool lets you generate **personal or business domain registration cover let
 
 ## 🖥️ Demo
 
-![Cover Letter Generator Screenshot](./screenshot.png)
+![Cover Letter Generator Screenshot](./screenshot.jpg)
 
 ---
 
