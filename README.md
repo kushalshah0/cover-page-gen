@@ -34,7 +34,7 @@ This tool lets you generate **personal or business domain registration cover let
 ├── index.html       # Main HTML file
 ├── style.css        # Custom CSS styles with theme variables
 ├── script.js        # Core logic (theme handling, live preview, export)
-├── screenshot.png   # Preview image for README
+├── screenshot.jpg   # Preview image for README
 └── README.md        # Project documentation
 ```
 
