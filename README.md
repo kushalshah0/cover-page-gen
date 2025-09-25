@@ -1,8 +1,4 @@
-Here’s a **professional README.md** file for your project:
-
----
-
-# 📄 Domain Cover Letter Generator
+# 📄 NP Domain Cover Letter Generator
 
 A **dynamic, theme-aware cover letter generator** for `.np` domain registration requests.
 This tool lets you generate **personal or business domain registration cover letters**, preview them live, and **download the result as a high-quality image** — always in **light theme**, even if you're browsing in dark mode.
